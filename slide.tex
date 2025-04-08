@@ -12,7 +12,7 @@
 % \setbeameroption{show only notes} % Only notes
 % \setbeameroption{show notes on second screen}
 
-% other packages
+% Other packages
 \usepackage{latexsym,amsmath,xcolor,multicol,booktabs,calligra}
 \usepackage{graphicx,listings,stackengine}
 \usepackage{animate}
@@ -20,7 +20,7 @@
 \definecolor{best}{rgb}{.8, .96, .94}
 \usepackage{xcolor, colortbl}
 
-% *************************** Additional package *****************************
+% Additional packages
 \usepackage[linesnumbered,ruled,vlined]{algorithm2e}
 \SetKwComment{Comment}{/* }{ */}   % The argument will be surrounded by /* ... */
 \SetAlCapFnt{\footnotesize}        % Make caption text smaller
@@ -48,23 +48,26 @@
 }
 \end{comment}
 
-\author[IA-PUCP]{Artificial Intelligence Summer Camp - 2025}
+\author[B. Smith]{Bob Smith}
 
 \title{Introducción a Network Analytics}
 % \subtitle{Presentation}
-\institute [Artificial Intelligence Summer Camp - 2025] 
-{
-\vspace*{-0.1cm}
-% \includegraphics[width=1.6cm]{pic/pucp.png}
-\hspace*{0.25cm}~%
-\includegraphics[width=2.0cm]{pic/iapucp_logo.jpg}
-\hspace*{0.25cm}~%
-% \includegraphics[width=1.4cm]{pic/unmsm.png}
-\vspace*{0.35cm}\\
-
-Inteligencia Artificial PUCP (IA-PUCP)}
+% \institute [Artificial Intelligence School]{School of Computer Science\\Go University}
+\institute [AI School]{
+    \vspace*{-0.1cm}
+    % \includegraphics[width=1.6cm]{pic/pucp.png}
+    \hspace*{0.25cm}~%
+    \includegraphics[width=2.0cm]{pic/iapucp_logo.jpg}
+    \hspace*{0.25cm}~%
+    % \includegraphics[width=1.4cm]{pic/unmsm.png}
+    \vspace*{0.35cm}
+    \newline
+    School of Computer Science\\
+    Go University
+}
 
 \date{\scriptsize January 14, 2025}
+% \date{\today}
 \usepackage{YTU}
 
 % defs
@@ -92,7 +95,7 @@ Inteligencia Artificial PUCP (IA-PUCP)}
     \titlepage
     \begin{figure}[ht!]
         \begin{center}
-            % \includegraphics[width=0.2\linewidth]{pic/YTU_logo.jpg}
+            % \includegraphics[width=0.2\linewidth]{pic/iapucp_logo.jpg}
        \end{center}
     \end{figure}
     
@@ -385,11 +388,10 @@ Inteligencia Artificial PUCP (IA-PUCP)}
     %========================
     % \input{ref.bib}
     \begin{frame}[allowframebreaks]
+        \scriptsize % use this command to resiz
         \bibliography{ref}
-        % \bibliographystyle{unsrt}
+        \bibliographystyle{unsrt}
         % \bibliographystyle{alpha}
-        % If too many references, use this command to resize：
-        \tiny\bibliographystyle{unsrt}
     \end{frame}
 
 \end{document}
